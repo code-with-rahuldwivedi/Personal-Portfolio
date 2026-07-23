@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahul Dwivedi | Java Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <a href="#home" class="logo">Rahul<span class="logo-dot">.</span><span class="logo-tag">dev</span></a>
+
+    <nav class="navbar">
+        <a href="#home" data-route="/home">Home</a>
+        <a href="#about" data-route="/about">About</a>
+        <a href="#education" data-route="/education">Education</a>
+        <a href="#skills" data-route="/skills">Skills</a>
+        <a href="#projects" data-route="/projects">Projects</a>
+        <a href="#certifications" data-route="/certs">Certifications</a>
+        <a href="#contact" data-route="/contact">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+<!-- Home Section -->
+<section class="home" id="home">
+    <div class="home-content">
+        <p class="route-tag"><span class="dot"></span>GET /rahul-dwivedi &mdash; 200 OK</p>
+
+        <div class="json-card">
+            <div class="json-card-bar">
+                <span class="json-dot red"></span><span class="json-dot yellow"></span><span class="json-dot green"></span>
+                <span class="json-card-title">response.json</span>
+            </div>
+            <pre class="json-body"><code>{
+  <span class="json-key">"name"</span>: <span class="json-string">"Rahul Dwivedi"</span>,
+  <span class="json-key">"role"</span>: <span class="json-string typing-animation"></span>,
+  <span class="json-key">"stack"</span>: [<span class="json-string">"Java"</span>, <span class="json-string">"Spring Boot"</span>, <span class="json-string">"MySQL"</span>],
+  <span class="json-key">"experience_level"</span>: <span class="json-string">"Fresher"</span>,
+  <span class="json-key">"status"</span>: <span class="json-bool">"open_to_work"</span>
+}</code></pre>
+        </div>
+
+        <p class="home-desc">
+            MCA Graduate from AKS University (2026) with strong knowledge of
+            Java, Spring Boot, Spring Security, Microservices, REST APIs, and MySQL.
+            Passionate about building scalable backend applications.
+        </p>
+
+        <div class="social-links">
+            <a href="https://linkedin.com/in/code-with-rahuldwivedi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/code-with-rahuldwivedi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/code-with-rahuldwivedi" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/917828471178" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="cta-buttons">
+            <a href="#about" class="btn">More About Me</a>
+            <a href="./resume/Rahul_Dwivedi_Resume.pdf" class="btn btn-secondary" download><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+    </div>
+
+    <div class="home-image">
+        <img src="./images/rahul4.jpg" alt="Rahul Dwivedi" />
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="about-image">
+        <img src="./images/rahul4.jpg" alt="Rahul Dwivedi" />
+    </div>
+
+    <div class="about-content">
+        <p class="route-tag"><span class="dot"></span>GET /about &mdash; 200 OK</p>
+        <h2>About <span>Me</span></h2>
+        <h3>Java Full Stack Developer</h3>
+
+        <p>
+            I am Rahul Dwivedi, an MCA graduate from AKS University, Satna (2026).
+            I specialize in Java Full Stack Development with expertise in Java,
+            Spring Boot, Spring Security, REST APIs, MySQL, and Microservices.
+            I enjoy building scalable backend systems and modern web applications.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section class="education" id="education">
+    <p class="route-tag centered"><span class="dot"></span>GET /education &mdash; 200 OK</p>
+    <h2 class="heading">My <span>Education</span></h2>
+
+    <div class="education-container">
+        <div class="edu-card">
+            <div class="edu-header">
+                <h3>Master of Computer Applications (MCA)</h3>
+                <span class="edu-year">2024 - 2026</span>
+            </div>
+            <p class="edu-institution">AKS University, Satna (M.P.)</p>
+            <p class="edu-details">
+                <i class="fas fa-trophy"></i> CGPA: 8.5/10
+            </p>
+            <p class="edu-description">
+                Specialized in Java Full Stack Development, Database Management, Web Technologies, and Software Engineering.
+            </p>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-header">
+                <h3>Bachelor of Science (B.Sc) - Biology</h3>
+                <span class="edu-year">2019 - 2022</span>
+            </div>
+            <p class="edu-institution">APS University, Rewa (M.P.)</p>
+            <p class="edu-details">
+                <i class="fas fa-trophy"></i> CGPA: 6.2/10
+            </p>
+            <p class="edu-description">
+                Switched to Computer Applications after graduation, driven by a growing interest in programming and software development.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section class="certifications" id="certifications">
+    <p class="route-tag centered"><span class="dot"></span>GET /certifications &mdash; 200 OK</p>
+    <h2 class="heading">Certifications &amp; <span>Awards</span></h2>
+
+    <div class="certifications-container">
+        <div class="cert-card">
+            <i class="fas fa-certificate"></i>
+            <h3>Java Full Stack Development</h3>
+            <p>Naresh I Technology</p>
+            <p class="cert-date">2023</p>
+        </div>
+
+        <div class="cert-card">
+            <i class="fas fa-certificate"></i>
+            <h3>Spring Boot Mastery</h3>
+            <p>Ashok I Technology</p>
+            <p class="cert-date">2024</p>
+        </div>
+
+        <div class="cert-card">
+            <i class="fas fa-certificate"></i>
+            <h3>REST API Development</h3>
+            <p>Ashok I Technology</p>
+            <p class="cert-date">2024</p>
+        </div>
+
+        <div class="cert-card">
+            <i class="fas fa-certificate"></i>
+            <h3>College Best Project </h3>
+            <p>AKS University - CommerceHub Project</p>
+            <p class="cert-date">2026</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills" id="skills">
+    <p class="route-tag centered"><span class="dot"></span>GET /skills &mdash; 200 OK</p>
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="skills-container">
+        <div class="technical-skills">
+            <h3>Technical Skills</h3>
+
+            <div class="skill">
+                <p>Java</p>
+                <div class="progress">
+                    <div class="progress-done" data-done="90"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Spring Boot</p>
+                <div class="progress">
+                    <div class="progress-done" data-done="85"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Spring Security</p>
+                <div class="progress">
+                    <div class="progress-done" data-done="80"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Microservices</p>
+                <div class="progress">
+                    <div class="progress-done" data-done="75"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>MySQL</p>
+                <div class="progress">
+                    <div class="progress-done" data-done="85"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>REST APIs</p>
+                <div class="progress">
+                    <div class="progress-done" data-done="88"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>HTML &amp; CSS</p>
+                <div class="progress">
+                    <div class="progress-done" data-done="82"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="professional-skills">
+            <h3>Professional Skills</h3>
+
+            <div class="circular-skills">
+                <div class="circle" data-percent="90">
+                    <div class="inner-circle">90%</div>
+                    <p>Problem Solving</p>
+                </div>
+
+                <div class="circle" data-percent="85">
+                    <div class="inner-circle">85%</div>
+                    <p>Teamwork</p>
+                </div>
+
+                <div class="circle" data-percent="80">
+                    <div class="inner-circle">80%</div>
+                    <p>Communication</p>
+                </div>
+
+                <div class="circle" data-percent="88">
+                    <div class="inner-circle">88%</div>
+                    <p>Creativity</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects" id="projects">
+    <p class="route-tag centered"><span class="dot"></span>GET /projects &mdash; 200 OK</p>
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="./images/commerasehub.png" alt="CommerceHub Project" />
+            <div class="project-content">
+                <h3>CommerceHub &ndash; E-Commerce Backend</h3>
+                <p>
+                    Scalable e-commerce backend with JWT authentication, role-based access control,
+                    product management, and order processing using microservices architecture.
+                </p>
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Spring Security</span>
+                    <span>JWT</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/code-with-rahuldwivedi/CommerceHub" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./images/SmartBilling.png" alt="Smart Billing System" />
+            <div class="project-content">
+                <h3>Smart Inventory &amp; Billing System</h3>
+                <p>
+                    Complete inventory management with GST-compliant invoice generation,
+                    automated low-stock alerts, real-time reporting, and multi-user role management.
+                </p>
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>MySQL</span>
+                    <span>iText PDF</span>
+                    <span>JFreeChart</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/code-with-rahuldwivedi/Smart-Inventory-Billing-System" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./images/employee-management.png" alt="Employee Management System" />
+            <div class="project-content">
+                <h3>Employee Management System</h3>
+                <p>
+                    Web application to manage employee records with secure login and
+                    role-based access for Admin and Employee users &mdash; supports adding,
+                    editing, viewing, and deleting employee data.
+                </p>
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Spring Security</span>
+                    <span>MySQL</span>
+                </div>
+                <div class="project-links">
+                    <span class="link-disabled"><i class="fab fa-github"></i> Private repo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <p class="route-tag centered"><span class="dot"></span>POST /contact &mdash; ready</p>
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Let's Work Together</h3>
+
+            <p>
+                I am currently looking for Java Developer / Java Full Stack Developer
+                opportunities. Feel free to contact me for collaboration or job opportunities.
+            </p>
+
+            <p><i class="fas fa-envelope"></i> rajdwivedi139@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91 7828471178</p>
+            <p><i class="fas fa-map-marker-alt"></i> Satna, Madhya Pradesh</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea rows="6" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+            <p class="form-status" id="formStatus"></p>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Rahul Dwivedi</h3>
+            <p>Java Full Stack Developer | MCA Graduate</p>
+            <p>Building scalable and efficient backend solutions</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Follow Me</h4>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/code-with-rahuldwivedi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/code-with-rahuldwivedi" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/code-with-rahuldwivedi" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/917828471178" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p><i class="fas fa-envelope"></i> rahul.dwivedi.aksu@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91 7828471178</p>
+            <p><i class="fas fa-map-marker-alt"></i> Satna, M.P., India</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Rahul Dwivedi. All rights reserved.</p>
+        <p>Designed &amp; Developed with <i class="fas fa-heart"></i> by Rahul Dwivedi</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
