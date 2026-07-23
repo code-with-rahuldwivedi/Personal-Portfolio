@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const subject = data.get('subject');
       const message = data.get('message');
 
-      const mailto = `mailto:rahul.dwivedi.aksu@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+      const mailto = `mailto:rajdwivedi139@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
 
       status.textContent = '200 OK — opening your mail app to send this message...';
       window.location.href = mailto;
